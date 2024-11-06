@@ -1,0 +1,14 @@
+/* Styles specific to larger views */
+@media (min-width: 768px) {
+    main {
+        max-width: 1200px; /* Adjust max-width as needed */
+        margin: 0 auto; /* Center main content horizontally */
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 1em;
+        justify-items: center; /* Center items horizontally */
+    }
+}
