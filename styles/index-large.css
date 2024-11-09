@@ -1,16 +1,18 @@
 /* index-large.css (Large Screens) */
 
+/* Large Screen Styles */
 @media (min-width: 768px) {
-    /* Show desktop navigation */
-    nav {
-        display: block;
-        text-align: center;
+    /* Hide the hamburger button on larger screens */
+    nav button {
+        display: none;
     }
 
+    /* Show horizontal navigation on larger screens */
     #nav-links {
-        display: flex; /* Display horizontally on desktop */
+        display: flex; /* Display links horizontally */
         position: static;
         flex-direction: row;
+        justify-content: center;
     }
 
     #nav-links a {
