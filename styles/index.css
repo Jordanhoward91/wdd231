@@ -67,7 +67,7 @@ nav button:focus {
 }
 
 #nav-links a:hover {
-    background-color: #ff4d4d;
+    background-color: #2b2e03;
     border-radius: 5px;
 }
 
@@ -137,7 +137,7 @@ footer .highlight {
 .filters button {
     padding: 10px 20px;
     margin: 10px;
-    background-color: #ff4d4d;
+    background-color: #2b2e03;
     border: none;
     color: white;
     cursor: pointer;
