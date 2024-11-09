@@ -6,39 +6,58 @@
     <title>WDD 231 - Web Frontend Development | Jordan Howard</title>
     <meta name="description" content="WDD 231 - Web Frontend Development | Jordan Howard | Homepage">
     <meta name="author" content="Jordan Howard">
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-     <!-- Google Fonts Preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts Stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
-
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
-    <!-- Reference getdates.js with the defer attribute -->
+
+    <!-- JavaScript with defer -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-	<header>
-		<h1>WDD 231 - Web Frontend Development</h1>
+    <header>
+        <h1>WDD 231 - Web Frontend Development</h1>
 		<nav>
-			<a href="">Home</a>
-			<a href="">Chamber</a>
-			<a href="https://github.com/Jordanhoward91">GitHub Profile</a>
-			<a href="https://www.linkedin.com/in/jordanhoward91/">LinkedIn</a>
+			<button id="hamburger-menu" aria-label="Open navigation menu">&#9776;</button>
+			<div id="nav-links">
+				<a href="">Home</a>
+				<a href="">Chamber</a>
+				<a href="https://github.com/Jordanhoward91">GitHub Profile</a>
+				<a href="https://www.linkedin.com/in/jordanhoward91/">LinkedIn</a>
+			</div>
 		</nav>
-	</header>
-	<main>
-		<section>Course Work</section>
-		<section>Idaho, USA</section>
-		<section>Web and Computer Programming Certificate</section>
-	</main>
-	<footer>
-		<p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p>
-		<p id="lastModified" class="highlight"></p>
-	</footer>
+    </header>
+
+    <main>
+        <section id="courses">
+            <h2>Course Work</h2>
+            <div id="course-list"></div>
+            <div class="filters">
+                <button onclick="filterCourses('all')">All Courses</button>
+                <button onclick="filterCourses('CSE')">CSE Courses</button>
+                <button onclick="filterCourses('WDD')">WDD Courses</button>
+            </div>
+            <p>Total Credits: <span id="total-credits">0</span></p>
+        </section>
+
+        <section>
+            <h2>Idaho, USA</h2>
+            <p>Information about Idaho and its significance in this context.</p>
+        </section>
+
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <p>Details about the certificate and the courses involved.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p>
+        <p id="lastModified" class="highlight"></p>
+    </footer>
 </body>
 </html>
