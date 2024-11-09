@@ -1,14 +1,59 @@
-/* Styles specific to larger views */
+/* index-large.css (Large Screens) */
+
 @media (min-width: 768px) {
-    main {
-        max-width: 1200px; /* Adjust max-width as needed */
-        margin: 0 auto; /* Center main content horizontally */
+    /* Show desktop navigation */
+    nav {
+        display: block;
+        text-align: center;
     }
 
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
-        gap: 1em;
-        justify-items: center; /* Center items horizontally */
+    #nav-links {
+        display: flex; /* Display horizontally on desktop */
+        position: static;
+        flex-direction: row;
+    }
+
+    #nav-links a {
+        padding: 15px 20px;
+        margin: 0 10px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #courses {
+        width: 60%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filters button {
+        margin: 10px;
+    }
+
+    /* Ensure course cards are displayed side by side on larger screens */
+    #course-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .course-card {
+        width: 250px;
     }
 }
