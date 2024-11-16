@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directory of Chamber members, showcasing member information and levels.">
+  <meta name="author" content="Jordan Howard">
+  <meta property="og:title" content="Chamber Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/chamber-logo.png">
+  <meta property="og:url" content="https://example.com/chamber/directory.html">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Chamber Directory</title>
+</head>
+<body>
+  <header>
+    <h1>Chamber Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </section>
+    <section id="member-directory" class="grid-view">
+      <!-- Member cards or list will be dynamically injected here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Jordan Howard | WDD 231</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
+ 
