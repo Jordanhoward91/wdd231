@@ -1,17 +1,21 @@
+/* Base Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
 header, footer {
-  background-color: #2E032B;
+  background-color: #2E032B; /* Dark purple header/footer */
   color: #fff;
   padding: 1em;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Navigation Styles */
 nav ul {
   color: #f9f9f9;
   list-style: none;
@@ -19,42 +23,206 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 1em;
 }
 
 nav ul li a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em;
+  transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: #ff6f61; /* Light pink color on hover */
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('images/chamber-of-commerce.jpg'); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  height: 20vh; /* This takes up 1/5 of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* Hero Text Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55a4a;
+}
+
+
+/* Main Content Styles */
 main {
-  padding: 2em;
-  background-color: #f9f9f9;
+  padding: 3em 2em;
 }
 
-.view-toggle {
-  text-align: center;
-  margin-bottom: 1em;
+/* Current Events Section */
+.current-events h2, .company-spotlights h2 {
+  font-size: 2rem;
+  color: #2E032B;
+  margin-bottom: 1.5rem;
 }
 
-#member-directory.grid-view {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1em;
+.current-events ul {
+  list-style: none;
+  padding: 0;
 }
 
-#member-directory.list-view {
-  display: block;
-}
-
-.member-card {
+.current-events li {
   background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 1em;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-events h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.current-events p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.weather {
+  background-color: #fff;
+  padding: 1.5em;
+  margin: 2em 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Company Spotlights Section */
+.company-spotlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.spotlight {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
+.spotlight h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.spotlight p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Footer Styles */
 footer p {
   margin: 0.5em 0;
+}
+
+footer p span {
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .current-events h2, .company-spotlights h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+  }
+
+  .company-spotlights {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .spotlight {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  .company-spotlights {
+    grid-template-columns: 1fr;
+  }
 }

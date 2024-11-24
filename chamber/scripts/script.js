@@ -48,5 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
     directory.classList.add("list-view");
   });
 
+  // Fetch and display current weather (for demonstration purposes)
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=San Miguel&units=imperial&appid=your_api_key')
+    .then(response => response.json())
+    .then(data => {
+      const weatherElement = document.getElementById('weather-info');
+      const temp = data.main.temp;
+      const weatherDescription = data.weather[0].description;
+      weatherElement.innerHTML = `<p>Current Temperature: ${temp}°F</p><p>${weatherDescription}</p>`;
+    })
+    .catch(error => {
+      document.getElementById('weather-info').innerHTML = `<p>Unable to fetch weather data.</p>`;
+    });
+
   fetchMembers();
 });
