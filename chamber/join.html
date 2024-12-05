@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Chamber of Commerce to grow your business and network with local professionals.">
+  <meta name="author" content="Jordan Howard">
+  
+  <meta property="og:title" content="Join the Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/hero-image.jpg">
+  <meta property="og:url" content="https://example.com/chamber/join.html">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+
+  <title>Join the Chamber of Commerce</title>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="/wdd231/index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="hero" style="background-image: url('images/chamber-of-commerce.jpg');">
+      <div class="hero-overlay">
+        <h2>Join the Chamber of Commerce</h2>
+        <p>Become a member and take your business to the next level.</p>
+      </div>
+    </section>
+
+    <!-- Join Form Section -->
+    <section class="join-form">
+      <h2>Membership Application Form</h2>
+      <form action="thankyou.html" method="GET">
+        <!-- Form Fields -->
+        <label for="first-name">
+          First Name:
+          <input type="text" id="first-name" name="first-name" required autocomplete="given-name" placeholder="Enter your first name">
+        </label>
+
+        <label for="last-name">
+          Last Name:
+          <input type="text" id="last-name" name="last-name" required autocomplete="family-name" placeholder="Enter your last name">
+        </label>
+
+        <label for="org-title">
+          Organizational Title:
+          <input type="text" id="org-title" name="org-title" required title="Organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Enter your title (min. 7 characters)">
+        </label>
+
+        <label for="email">
+          Email Address:
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@example.com">
+        </label>
+
+        <label for="mobile">
+          Mobile Number:
+          <input type="tel" id="mobile" name="mobile" required autocomplete="tel" placeholder="123-456-7890">
+        </label>
+
+        <label for="org-name">
+          Business/Organization Name:
+          <input type="text" id="org-name" name="org-name" required autocomplete="organization" placeholder="Enter your business name">
+        </label>
+
+        <label for="membership-level">
+          Membership Level:
+          <select id="membership-level" name="membership-level" required>
+            <option value="np">NP Membership (Non-profit) - Free</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label for="description">
+          Business/Organization Description:
+          <textarea id="description" name="description" title="Description of your business/organization" required placeholder="Tell us about your business/organization"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+
+    <!-- Membership Levels and Cards -->
+    <section class="membership">
+      <h2 class="membership-title">Membership Levels</h2>
+      <div class="membership-cards">
+        <div class="card" id="np-card">
+          <h3>NP Membership</h3>
+          <p>No fee for Non-Profit Organizations.</p>
+          <button class="open-modal" data-target="#np-modal">View Benefits</button>
+        </div>
+        <div class="card" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>Basic membership with access to events and networking opportunities.</p>
+          <button class="open-modal" data-target="#bronze-modal">View Benefits</button>
+        </div>
+        <div class="card" id="silver-card">
+          <h3>Silver Membership</h3>
+          <p>Increased benefits including event discounts and advertising opportunities.</p>
+          <button class="open-modal" data-target="#silver-modal">View Benefits</button>
+        </div>
+        <div class="card" id="gold-card">
+          <h3>Gold Membership</h3>
+          <p>Premium membership with exclusive event access and advanced advertising options.</p>
+          <button class="open-modal" data-target="#gold-modal">View Benefits</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals for Membership Benefits -->
+    <div id="np-modal" class="modal">
+      <div class="modal-content">
+        <h3>NP Membership Benefits</h3>
+        <ul>
+          <li>Free Membership</li>
+          <li>Access to networking events</li>
+          <li>Listing in the Chamber directory</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div id="bronze-modal" class="modal">
+      <div class="modal-content">
+        <h3>Bronze Membership Benefits</h3>
+        <ul>
+          <li>Access to all Chamber events</li>
+          <li>Networking opportunities with local businesses</li>
+          <li>Discounts on Chamber events</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div id="silver-modal" class="modal">
+      <div class="modal-content">
+        <h3>Silver Membership Benefits</h3>
+        <ul>
+          <li>All Bronze Membership benefits</li>
+          <li>Event spotlight features</li>
+          <li>Advertising on Chamber website</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <div id="gold-modal" class="modal">
+      <div class="modal-content">
+        <h3>Gold Membership Benefits</h3>
+        <ul>
+          <li>All Silver Membership benefits</li>
+          <li>Exclusive access to VIP events</li>
+          <li>Prominent business listing on Chamber website</li>
+        </ul>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; <span id="year"></span> | Jordan Howard | WDD 231</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
