@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Member One",
+    "image": "member1.jpg",
+    "address": "123 Maple St, Cityville, 12345",
+    "phone": "555-1234",
+    "website": "https://www.memberone.com",
+    "membership": 1
+  },
+  {
+    "name": "Member Two",
+    "image": "member2.jpg",
+    "address": "456 Oak St, Townsville, 67890",
+    "phone": "555-5678",
+    "website": "https://www.membertwo.com",
+    "membership": 2
+  },
+  {
+    "name": "Member Three",
+    "image": "member3.jpg",
+    "address": "789 Pine St, Villagetown, 11223",
+    "phone": "555-9101",
+    "website": "https://www.memberthree.com",
+    "membership": 3
+  },
+  {
+    "name": "Member Four",
+    "image": "member4.jpg",
+    "address": "321 Birch St, Metropolis, 44556",
+    "phone": "555-1213",
+    "website": "https://www.memberfour.com",
+    "membership": 2
+  },
+  {
+    "name": "Member Five",
+    "image": "member5.jpg",
+    "address": "654 Cedar St, Springfield, 77889",
+    "phone": "555-1415",
+    "website": "https://www.memberfive.com",
+    "membership": 3
+  }
+]

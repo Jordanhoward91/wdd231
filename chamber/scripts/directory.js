@@ -6,13 +6,17 @@ async function loadMembers() {
 
     const directoryContainer = document.getElementById('directory-container');
 
-    members.forEach(member => {
+    // Loop through each member
+    for (let member of members) {
       const memberCard = document.createElement('div');
       memberCard.classList.add('member-card');
-      
+
+      // Fetch random image from Unsplash
+      const image = await getRandomImage();
+
       // Build member card
       memberCard.innerHTML = `
-        <img src="images/${member.image}" alt="${member.name}">
+        <img src="${image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
@@ -20,9 +24,26 @@ async function loadMembers() {
         <p><strong>Membership Level:</strong> ${getMembershipLevel(member.membership)}</p>
       `;
       directoryContainer.appendChild(memberCard);
-    });
+    }
   } catch (error) {
     console.error('Error loading member data:', error);
+  }
+}
+
+// Fetch a random image from Unsplash
+async function getRandomImage() {
+  const apiKey = '_MLxzbiw1ZhAHHLKA2yOVApMuPuGvEDT5yyQx_ifZEA';  // Replace with your actual Unsplash Access Key
+  const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=1&query=business,office&orientation=landscape`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    // Return the URL of the random image
+    return data[0]?.urls?.small || 'images/default.jpg'; // Fallback to a default image if not found
+  } catch (error) {
+    console.error('Error fetching random image from Unsplash:', error);
+    return 'images/default.jpg'; // Fallback image in case of error
   }
 }
 
