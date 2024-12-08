@@ -30,9 +30,9 @@ async function loadGallery() {
     const galleryImages = document.querySelectorAll('.gallery-grid figure img');
     const galleryCaptions = document.querySelectorAll('.gallery-grid figure figcaption');
 
-    // Loop through each gallery image and assign a random image from Unsplash
+    // Loop through each gallery image and assign a random image from the server (which fetches from Unsplash)
     for (let i = 0; i < galleryImages.length; i++) {
-      const { image, caption } = await getRandomImage(); // Get random image and caption from Unsplash
+      const { image, caption } = await getRandomImage(); // Get random image and caption from the server
       galleryImages[i].setAttribute('src', image); // Set the image source
       galleryCaptions[i].textContent = caption; // Set the caption text
     }
@@ -41,15 +41,13 @@ async function loadGallery() {
   }
 }
 
-// Fetch a random image from Unsplash and generate a caption
+// Fetch a random image from the server (which fetches from Unsplash)
 async function getRandomImage() {
-  const apiKey = '_MLxzbiw1ZhAHHLKA2yOVApMuPuGvEDT5yyQx_ifZEA';  // Replace with your actual Unsplash Access Key
-  const url = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=1&query=local,community,landscape&orientation=landscape`;
-
   try {
-    const response = await fetch(url);
+    const response = await fetch('/api/photos'); // Fetch from the server endpoint
     const data = await response.json();
 
+    // Extract the image and caption
     const image = data[0]?.urls?.small || 'images/default.jpg';  // Image URL
     const description = data[0]?.description || data[0]?.alt_description || "A stunning view.";  // Photo description or fallback
     const tags = data[0]?.tags?.map(tag => tag.title).join(', ') || "Nature, Community, Landscape";  // Tags from Unsplash
@@ -59,7 +57,7 @@ async function getRandomImage() {
 
     return { image, caption };  // Return both the image URL and the caption
   } catch (error) {
-    console.error('Error fetching random image from Unsplash:', error);
+    console.error('Error fetching random image from server:', error);
     return { image: 'images/default.jpg', caption: 'Default Caption' }; // Fallback values
   }
 }
@@ -75,3 +73,4 @@ document.getElementById('last-modified').textContent = document.lastModified;
 
 // Load gallery images when the page is ready
 window.onload = loadGallery;
+
