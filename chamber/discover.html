@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover local photos, events, and attractions in the community.">
+  <meta name="author" content="Jordan Howard">
+
+  <meta property="og:title" content="Discover Local Attractions">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://example.com/discover-hero-image.jpg">
+  <meta property="og:url" content="https://example.com/discover.html">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Discover Local Attractions - Chamber of Commerce</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="/wdd231/index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="discover-page">
+    <section class="sidebar">
+      <h2>Last Visit</h2>
+      <p id="visit-message">Loading...</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Local Photos</h2>
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 1" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 2" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 3" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 4" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 5" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+        <figure>
+          <img src="images/default.jpg" alt="Local Photo 6" class="lazy" loading="lazy">
+          <figcaption>Loading caption...</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; <span id="year"></span> | Jordan Howard | WDD 231</p>
+    <p>Last Updated: <span id="last-modified"></span></p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="scripts/script.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</body>
+</html>
