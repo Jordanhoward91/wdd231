@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,40 +34,73 @@
 
   <!-- Main Content Section -->
   <main class="discover-page">
-    <section class="sidebar">
-      <h2>Last Visit</h2>
-      <p id="visit-message">Loading...</p>
-    </section>
+    <div class="content-wrapper">
+      <!-- Sidebar Section -->
+      <section class="sidebar">
+        <h2>Last Visit</h2>
+        <p id="visit-message">Loading...</p>
+      </section>
 
-    <section class="gallery">
-      <h2>Local Photos</h2>
-      <div class="gallery-grid">
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 1" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 2" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 3" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 4" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 5" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-        <figure>
-          <img src="images/default.jpg" alt="Local Photo 6" class="lazy" loading="lazy">
-          <figcaption>Loading caption...</figcaption>
-        </figure>
-      </div>
-    </section>
+      <!-- Gallery Section -->
+      <section class="gallery">
+        <h2>Local Photos</h2>
+        <div class="gallery-grid">
+          <!-- First Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-1.webp" type="image/webp">
+              <img src="images/local-photo-1.jpg" alt="Local Photo 1" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Photo of the local park.</figcaption>
+          </figure>
+
+          <!-- Second Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-2.webp" type="image/webp">
+              <img src="images/local-photo-2.jpg" alt="Local Photo 2" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Photo of the town square.</figcaption>
+          </figure>
+
+          <!-- Third Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-3.webp" type="image/webp">
+              <img src="images/local-photo-3.jpg" alt="Local Photo 3" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Local business storefront.</figcaption>
+          </figure>
+
+          <!-- Fourth Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-4.webp" type="image/webp">
+              <img src="images/local-photo-4.jpg" alt="Local Photo 4" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Local cafe.</figcaption>
+          </figure>
+
+          <!-- Fifth Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-5.webp" type="image/webp">
+              <img src="images/local-photo-5.jpg" alt="Local Photo 5" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Community event in progress.</figcaption>
+          </figure>
+
+          <!-- Sixth Image -->
+          <figure>
+            <picture>
+              <source srcset="images/local-photo-6.webp" type="image/webp">
+              <img src="images/local-photo-6.jpg" alt="Local Photo 6" class="lazy" loading="lazy">
+            </picture>
+            <figcaption>Local museum.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </div>
   </main>
 
   <!-- Footer Section -->
@@ -78,6 +112,6 @@
   <!-- External Scripts -->
   <script src="scripts/script.js" defer></script>
   <script src="scripts/discover.js" defer></script>
-
 </body>
+
 </html>
