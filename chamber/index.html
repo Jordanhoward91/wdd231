@@ -23,8 +23,17 @@
 </head>
 
 <body>
-  <!-- Placeholder for header -->
-  <div id="header-placeholder"></div>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="/wdd231/index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Main Content Section -->
   <main>
@@ -92,18 +101,6 @@
 
   <!-- External Scripts -->
   <script src="scripts/script.js" defer></script>
-
-  <!-- External Script to Fetch Header -->
-  <script>
-    // Fetch and insert the header.html into the placeholder div
-    fetch('header.html')  // Path to your header.html file
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data; // Insert header HTML into placeholder
-      })
-      .catch(error => console.error('Error loading header:', error));
-  </script>
-
 </body>
 
 </html>
