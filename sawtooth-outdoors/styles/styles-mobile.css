@@ -1,0 +1,62 @@
+@media (max-width: 768px) {
+    /* Header Styles for Mobile */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    /* Hero Section Styles for Mobile */
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 16px;
+    }
+
+    /* Section Styles for Mobile */
+    section {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    /* Footer Styles for Mobile */
+    footer {
+        padding: 10px;
+    }
+}
