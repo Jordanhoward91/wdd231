@@ -1,0 +1,60 @@
+/* Trails Page Styles */
+.trail-list {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.trail-list h2 {
+    font-size: 36px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.trail-list p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Trail Cards */
+.trail-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trail-card h3 {
+	display: flex;
+	justify-content: center;
+    font-size: 28px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 10px;
+}
+
+.trail-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.trail-card strong {
+    font-weight: bold;
+}
+
+/* Ensure trail cards are responsive */
+@media (max-width: 768px) {
+    .trail-list {
+        padding: 20px;
+    }
+
+    .trail-card {
+        margin: 15px 0;
+    }
+}
+
