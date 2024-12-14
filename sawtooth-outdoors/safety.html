@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety - Sawtooth Outdoors</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
-	<link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Global Styles -->
+    <link rel="stylesheet" href="styles/safety.css"> <!-- Safety Page Specific Styles -->
+    <link rel="stylesheet" href="styles/styles-mobile.css"> <!-- Mobile Styles -->
 
 </head>
 <body>
@@ -24,14 +25,55 @@
             </ul>
         </nav>
     </header>
+
     <section class="safety-tips">
         <h2>Safety Tips for the Sawtooth Mountains</h2>
         <p>Important safety and preparedness advice specific to the mountainous terrain.</p>
+        
+        <div class="tip-card">
+            <h3>Plan Ahead and Prepare</h3>
+            <p>Before heading out, research your route and familiarize yourself with trail conditions, weather, and wildlife in the area. Always tell someone your plans and estimated return time.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Stay on Marked Trails</h3>
+            <p>Stick to well-established trails and avoid taking shortcuts. This reduces your risk of getting lost and helps protect the natural environment.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Bring Proper Gear</h3>
+            <p>Ensure you have appropriate clothing, footwear, and gear. Layered clothing, sturdy boots, and a good backpack can make all the difference in changing weather conditions.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Stay Hydrated and Nourished</h3>
+            <p>Pack enough water and high-energy food for the entire trip. In the mountains, dehydration and fatigue can set in quickly if you don't maintain your energy levels.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Know How to Handle Wildlife</h3>
+            <p>Be aware of wildlife, including bears and mountain lions. Keep a safe distance, store food properly, and know what to do if you encounter an animal.</p>
+        </div>
+
+        <div class="tip-card">
+            <h3>Be Aware of Weather Conditions</h3>
+            <p>Weather in the mountains can change rapidly. Be prepared for sudden storms, snow, or high winds. Always check the forecast before heading out and carry weather-resistant gear.</p>
+        </div>
+
     </section>
-	<footer> 
-		<p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
-		<p id="lastModified" class="highlight"></p> 
-		<p><a href="attributions.html">Attributions</a></p>
-	</footer>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
+        <p id="lastModified" class="highlight"></p> 
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
+
+    <script>
+        // Display the last modified time in the footer
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+        
+        // Display the current year for the copyright
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

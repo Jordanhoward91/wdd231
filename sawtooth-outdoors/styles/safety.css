@@ -1,0 +1,61 @@
+/* Safety Page Specific Styles */
+
+/* Apply background image to the entire page */
+body {
+    background-image: url('../images/safety.jpeg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+/* Safety Section */
+.safety-tips {
+    background-color: rgba(255, 255, 255, 0.8); /* White with some transparency */
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card Styles */
+.tip-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque than the safety section background */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h3 {
+    font-size: 28px;
+    color: #228B22; /* Forest Green */
+}
+
+.tip-card p {
+    font-size: 18px;
+    color: #333; /* Dark Gray for readability */
+}
+
+/* Header */
+.safety-tips h2 {
+    font-size: 36px;
+    color: #228B22; /* Forest Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #228B22; /* Forest Green */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
