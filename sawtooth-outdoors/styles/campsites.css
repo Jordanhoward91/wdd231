@@ -1,0 +1,77 @@
+/* Campsites Page Specific Styles */
+
+/* Apply background image to the entire body */
+body {
+    background-image: url('../images/campsite-bg.jpeg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+/* Campsite Section */
+.campsite-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to let background show through */
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Campsite Title */
+.campsite-info h2 {
+    font-size: 36px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campsite Description Paragraph */
+.campsite-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Campsite Cards */
+.campsite-card {
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background for campsite cards */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Campsite Card Titles */
+.campsite-card h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 10px;
+}
+
+/* Campsite Card Content */
+.campsite-card p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Bold Text inside Campsite Cards */
+.campsite-card strong {
+    font-weight: bold;
+}
+
+/* Ensure campsite cards are responsive */
+@media (max-width: 768px) {
+    .campsite-info {
+        padding: 20px;
+    }
+
+    .campsite-card {
+        margin: 15px 0;
+    }
+}

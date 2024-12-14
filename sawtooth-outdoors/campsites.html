@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campsites - Sawtooth Outdoors</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
-	<link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Global Styles -->
+    <link rel="stylesheet" href="styles/campsites.css"> <!-- Campsites Page Specific Styles -->
+    <link rel="stylesheet" href="styles/styles-mobile.css"> <!-- Mobile Styles -->
 
 </head>
 <body>
@@ -23,16 +24,33 @@
             </ul>
         </nav>
     </header>
+
     <section class="campsite-info">
         <h2>Best Campsites in the Sawtooth Mountains</h2>
         <p>Find detailed information on campsites including amenities and recommendations.</p>
-    </section>
-	<footer> 
-		<p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
-		<p id="lastModified" class="highlight"></p> 
-		<p><a href="attributions.html">Attributions</a></p>
-	</footer>
+        
+        <div class="campsite-card">
+            <h3>Alpine Meadows Campground</h3>
+            <p>Located near the Sawtooth Lake, this campground offers scenic views and easy access to hiking trails.</p>
+        </div>
 
+        <div class="campsite-card">
+            <h3>Redfish Lake Campground</h3>
+            <p>A popular spot for families, with a beautiful lake for water activities and close proximity to hiking trails.</p>
+        </div>
+
+        <div class="campsite-card">
+            <h3>Smiley Creek Campground</h3>
+            <p>A peaceful and remote campground surrounded by dense forests, perfect for a quiet getaway.</p>
+        </div>
+
+    </section>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
+        <p id="lastModified" class="highlight"></p> 
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
 
     <script>
         // Display the last modified time in the footer
