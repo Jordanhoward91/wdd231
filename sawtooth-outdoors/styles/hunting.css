@@ -1,0 +1,77 @@
+/* Hunting Page Specific Styles */
+
+/* Apply background image to the entire body */
+body {
+    background-image: url('../images/hunting-bg.jpeg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+/* Hunting Guides Section */
+.hunting-guides {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to let background show through */
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hunting Guides Section Title */
+.hunting-guides h2 {
+    font-size: 36px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Hunting Guides Description */
+.hunting-guides p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Individual Hunting Guide Cards */
+.hunting-guide {
+    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background for hunting guide cards */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hunting Guide Titles */
+.hunting-guide h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 10px;
+}
+
+/* Hunting Guide Content */
+.hunting-guide p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Bold Text inside Hunting Guide Cards */
+.hunting-guide strong {
+    font-weight: bold;
+}
+
+/* Ensure hunting guide cards are responsive */
+@media (max-width: 768px) {
+    .hunting-guides {
+        padding: 20px;
+    }
+
+    .hunting-guide {
+        margin: 15px 0;
+    }
+}
