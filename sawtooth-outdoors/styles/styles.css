@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .intro {
     font-family: 'Roboto Slab', serif;
     color: #228B22; /* Forest Green */
 }
