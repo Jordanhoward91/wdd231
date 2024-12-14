@@ -41,7 +41,7 @@ body {
 
 /* Individual Hunting Guide Cards */
 .hunting-guide {
-    background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background for hunting guide cards */
+    background-color: rgba(244, 244, 244, 0.4); /* Semi-transparent background for hunting guide cards */
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
