@@ -3,57 +3,71 @@ section {
     padding: 40px 20px;
 }
 
+/* Background Image for Body */
+body {
+    background-image: url('../images/contact-background.jpeg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    font-family: 'Roboto', sans-serif; /* Consistent font for the page */
+}
+
 /* Contact Form Styling */
 .contact-form {
-    background-color: #fff;
-    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    max-width: 900px;
     margin: 0 auto;
-    padding: 80px;
+    padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
 }
 
 .contact-form h2 {
-    font-size: 32px;
-    color: #228B22; /* Forest Green */
+    font-size: 36px;
+    color: #228B22; /* Forest Green for consistency */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Input and Textarea Fields */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #A9A9A9; /* Mountain Gray */
-    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #A9A9A9;
+    border-radius: 5px;
     font-size: 16px;
+    background-color: #f9f9f9;
 }
 
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    border-color: #FF4500; /* Sunset Orange */
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #FF4500; /* Sunset Orange for focus */
     outline: none;
+    background-color: #fff;
 }
 
 /* Submit Button */
 .contact-form button[type="submit"] {
     background-color: #FF4500; /* Sunset Orange */
     color: white;
-    padding: 12px 20px;
+    padding: 14px 24px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button[type="submit"]:hover {
-    background-color: #D93F00; /* Darker Sunset Orange */
+    background-color: #D93F00;
 }
 
 /* Label Styling */
@@ -62,7 +76,7 @@ section {
     font-weight: bold;
     color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 /* Message Box */
@@ -70,7 +84,7 @@ section {
     text-align: center;
     font-size: 1.1rem;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .message.success {
@@ -81,4 +95,26 @@ section {
 .message.error {
     background-color: #dc3545;
     color: white;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form select {
+        padding: 12px;
+    }
+
+    .contact-form button[type="submit"] {
+        padding: 12px 18px;
+    }
 }
