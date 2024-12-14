@@ -1,0 +1,84 @@
+/* Section Styles */
+section {
+    padding: 40px 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    font-size: 32px;
+    color: #228B22; /* Forest Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input and Textarea Fields */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #A9A9A9; /* Mountain Gray */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #FF4500; /* Sunset Orange */
+    outline: none;
+}
+
+/* Submit Button */
+.contact-form button[type="submit"] {
+    background-color: #FF4500; /* Sunset Orange */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #D93F00; /* Darker Sunset Orange */
+}
+
+/* Label Styling */
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Message Box */
+.message {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.message.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.message.error {
+    background-color: #dc3545;
+    color: white;
+}

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sawtooth Outdoors</title>
 
-	<link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/styles-mobile.css">
 
 </head>
@@ -24,25 +25,27 @@
             </ul>
         </nav>
     </header>
+
     <section class="contact-form">
         <h2>Contact Us</h2>
         <form action="thankyou.html" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
-	<footer> 
-		<p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
-		<p id="lastModified" class="highlight"></p> 
-		<p><a href="attributions.html">Attributions</a></p>
-	</footer>
+
+    <footer> 
+        <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
+        <p id="lastModified" class="highlight"></p> 
+        <p><a href="attributions.html">Attributions</a></p>
+    </footer>
 </body>
 </html>
