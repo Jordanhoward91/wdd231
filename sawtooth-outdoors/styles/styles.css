@@ -125,3 +125,26 @@ footer {
 footer p {
     margin: 0;
 }
+
+
+/* Weather Card Styling */
+.weather-card {
+    background-color: #fff;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.weather-card h3 {
+    font-size: 24px;
+    color: #228B22; /* Forest Green */
+    margin-bottom: 15px;
+}
+
+.weather-card p {
+    font-size: 1.1rem;
+    color: #333;
+}

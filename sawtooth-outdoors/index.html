@@ -27,7 +27,6 @@
                 <li><a href="campsites.html">Campsites</a></li>
                 <li><a href="hunting.html">Hunting</a></li>
                 <li><a href="safety.html">Safety</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -39,8 +38,42 @@
         <h1>Welcome to Sawtooth Outdoors</h1>
         <p>Your guide to the Sawtooth Mountains</p>
         <button>Start Your Adventure</button>
-    </section>
-	
+
+
+        <!-- Weather Information Card Section -->
+        <section class="weather-card" id="weather-card">
+            <h3>Current Weather in Stanley Idaho</h3>
+            <div id="weather-info">
+                <script>
+                    const apiKey = '407fd750375e864d1311169e64467610'; // Your OpenWeatherMap API key
+                    const city = 'Stanley,us'; // Sawtooth Mountains
+                    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`; // Fetch weather in Fahrenheit
+
+                    // Fetch weather data
+                    fetch(apiUrl)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);  // Check the data structure in the browser console
+
+                            const temperature = data.main.temp;
+                            const weatherDescription = data.weather[0].description;
+                            const humidity = data.main.humidity;
+
+                            // Display weather data on the page
+                            document.getElementById('weather-info').innerHTML = `
+                                <p>Temperature: ${temperature}°F</p>
+                                <p>Condition: ${weatherDescription}</p>
+                                <p>Humidity: ${humidity}%</p>
+                            `;
+                        })
+                        .catch(error => {
+                            console.error("Error fetching weather data:", error);
+                        });
+                </script>
+
+            </div>
+        </section>
+	</section>
 	<footer> 
 		<p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p> 
 		<p id="lastModified" class="highlight"></p> 

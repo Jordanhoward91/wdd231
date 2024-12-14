@@ -19,7 +19,6 @@
                 <li><a href="campsites.html">Campsites</a></li>
                 <li><a href="hunting.html">Hunting</a></li>
                 <li><a href="safety.html">Safety</a></li>
-                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -38,5 +37,14 @@
 		<p id="lastModified" class="highlight"></p> 
 		<p><a href="attributions.html">Attributions</a></p>
 	</footer>
+
+
+    <script>
+        // Display the last modified time in the footer
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+        
+        // Display the current year for the copyright
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
